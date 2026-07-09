@@ -1,0 +1,178 @@
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 0;
+    min-height: 820px;
+    background: linear-gradient(135deg,#eef8ff 0%,#d9f0ff 100%);
+}
+
+
+.hero-circle{
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.35);
+    top: -220px;
+    right: -250px;
+}
+
+.hero-light{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: #8fd8ff;
+    opacity: .15;
+    left: -120px;
+    bottom: -150px;
+    filter: blur(30px);
+}
+
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-left{
+    width: 48%;
+}
+
+.party{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.party img{
+    width: 60px;
+}
+
+.party span{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #006fA3;;
+    font-weight: 600;
+}
+
+.hello{
+    color: #0093DA;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-left h1{
+    font-size: 60px;
+    line-height: 1.08;
+    color: #006fA3;
+    font-weight:800;
+    margin-bottom: 20px;
+}
+
+.hero-left h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #006fA3;
+}
+
+.line{
+    width: 120px;
+    height: 5px;
+    border-radius:20px;
+    background: #0093DA;
+    margin: 25px 0;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #444;
+    max-width: 550px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn{
+    background: #006fA3;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 38px;
+    border-radius: 40px;
+    transition: .3s;
+    font-weight: 600;
+    box-shadow: 0 15px 30px rgba(0,61,143,.25);
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background: #0093DA;
+}
+
+.btn-outline{
+    padding: 16px 38px;
+    border: 1px solid #006fA3;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #006fA3;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-outline:hover{
+    background: #0093DA;
+        border: 1px solid #0093DA;
+
+    color: #fff;
+}
+
+.hero-right{
+    width: 52%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right::before{
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    background: #ffffff;
+    opacity: .55;
+    border-radius: 50%;
+    top: 40px;
+    z-index: 1;
+}
+
+.hero-right img{
+    position: relative;
+    width: 620px;
+    max-width: 100%;
+    z-index: 2;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{
+transform: translateY(0);
+}
+
+50%{
+transform: translateY(-15px);
+}
+
+100%{
+transform: translateY(0);
+}
+
+}
