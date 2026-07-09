@@ -9,7 +9,7 @@
 .news-banner{
    position: absolute;
    inset: 0;
-   background-image: linear-gradient(135deg, rgba(255, 255, 255, .93) 00%, rgba(255, 255, 255, .95) 100%), url("/assets/images/banner.webp");
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, .93) 100%, rgba(255, 255, 255, .95) 100%), url("/assets/images/banner.webp");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;

@@ -1,0 +1,133 @@
+.gallery-section{
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.gallery-bg{
+    position: absolute;
+   inset: 0;
+   background-image: linear-gradient(rgba(255, 255, 255, .93), rgba(255, 255, 255, .95)), url("/assets/images/logo.png");
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
+
+.gallery-tag{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0093DA;
+    margin-bottom: 8px;
+}
+
+.gallery-tag::before{
+    content: none !important;
+}
+
+.section-title h2{
+    font-size: 45px;
+    color: #006FA3;
+    font-weight: 800;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.section-title p{
+   font-size: 18px;
+    color: #444;
+    line-height: 1.9;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 240px;
+    gap: 18px;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+    transition: .4s;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.08);
+}
+
+.gallery-item:hover{
+    transform: translateY(-10px);
+}
+
+.gallery-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+    color: #fff;
+    background: linear-gradient(transparent,rgba(0,0,0,.75));
+    transform: translateY(100%);
+    transition: .4s;
+}
+
+.gallery-item:hover .gallery-overlay{
+    transform: translateY(0);
+}
+
+.gallery-overlay h3{
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.gallery-overlay span{
+    color: #0093DA;
+    font-size: 16px;
+}
+
+.big{
+    grid-row: span 2;
+}
+
+.wide{
+    grid-column: span 2;
+}
+
+.gallery-button{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.gallery-button a{
+   display: inline-block;
+    margin-top: 40px;
+    padding: 15px 42px;
+    background: #006FA3;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .35s;
+    box-shadow: 0 15px 30px rgba(0,147,230,.35);
+}
+
+.gallery-button a:hover{
+ background: #0093DA;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,147,230,.35);
+}

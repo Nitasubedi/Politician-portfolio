@@ -16,6 +16,10 @@
     align-items:center;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 .logo img{
     width:80px;
 }
