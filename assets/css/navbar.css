@@ -63,3 +63,12 @@
 .social a:hover{
     transform:translateY(-4px);
 }
+
+.nav-links a.active{
+    color: #0093DA;
+    font-weight: 600;
+}
+
+.nav-links a.active::after{
+    width: 100%;
+}
