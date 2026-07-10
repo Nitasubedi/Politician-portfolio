@@ -89,3 +89,79 @@
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,147,230,.35);
 }
+
+
+/* ===============================
+   About Responsive - Small Mobile
+================================= */
+@media (max-width:460px){
+
+    .about{
+        padding:60px 0;
+    }
+
+    .bg-logo{
+        display:none;
+    }
+
+    /* Text on top, image below */
+    .about-wrapper{
+        display:flex;
+        flex-direction:column-reverse;
+        gap:40px;
+        align-items:center;
+    }
+
+    /* Full width text */
+    .about-right{
+        width:100%;
+        text-align:center;
+        order:1;
+    }
+
+    .about-left{
+        width:100%;
+        order:2;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .circle-bg{
+        width:280px;
+        height:280px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .about-person{
+        width:250px;
+    }
+
+    .section-subtitle{
+        font-size:14px;
+        letter-spacing:1px;
+    }
+
+    .about-right h2{
+        font-size:30px;
+        line-height:1.3;
+        margin-top:10px;
+    }
+
+    .about-right p{
+        width:100%;
+        font-size:15px;
+        line-height:1.8;
+        margin-top:18px;
+    }
+
+    .about-btn{
+        width:100%;
+        text-align:center;
+        padding:14px 20px;
+        font-size:15px;
+        margin-top:25px;
+    }
+
+}

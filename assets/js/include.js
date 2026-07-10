@@ -1,26 +1,34 @@
 async function loadComponent(id, file) {
-  const response = await fetch(file);
+  const element = document.getElementById(id);
 
+  if (!element) return;
+
+  const response = await fetch(file);
   const html = await response.text();
 
-  document.getElementById(id).innerHTML = html;
+  element.innerHTML = html;
+
+  if (id === "navbar") {
+    setActiveNav();
+    initMobileMenu();
+  }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = window.location.pathname.split("/").pop();
+function setActiveNav() {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  const navLinks = document.querySelectorAll(".nav-links a");
+  const links = document.querySelectorAll(".nav-links a");
 
-  navLinks.forEach((link) => {
+  links.forEach((link) => {
     link.classList.remove("active");
 
     const href = link.getAttribute("href");
 
-    if (href === currentPage || (currentPage === "" && href === "index.html")) {
+    if (href === currentPage) {
       link.classList.add("active");
     }
   });
-});
+}
 
 loadComponent("navbar", "components/Navbar.html");
 loadComponent("hero", "components/Hero.html");
