@@ -37,3 +37,4 @@ loadComponent("news", "components/News.html");
 loadComponent("gallery", "components/Gallery.html");
 loadComponent("videos", "components/Videos.html");
 loadComponent("footer", "components/Footer.html");
+loadComponent("timeline", "components/Timeline.html");

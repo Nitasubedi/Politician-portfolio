@@ -1,6 +1,6 @@
 .gallery-section{
     position: relative;
-    padding: 120px 0;
+    padding: 100px 0;
     overflow: hidden;
 }
 
@@ -28,20 +28,26 @@
     content: none !important;
 }
 
-.section-title h2{
-    font-size: 45px;
-    color: #006FA3;
-    font-weight: 800;
-    margin-bottom: 18px;
-    line-height: 1.2;
+.timeline-section .section-title{
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-.section-title p{
-   font-size: 18px;
-    color: #444;
-    line-height: 1.9;
-    font-weight: 400;
-    letter-spacing: 0;
+.timeline-section .section-title h2{
+    font-size: 45px;
+    font-weight: 800;
+    color: #006FA3;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.timeline-section .section-title span{
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #0093DA;
+    border-radius: 50px;
+    margin: 18px auto 25px;
 }
 
 .gallery-grid{

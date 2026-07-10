@@ -1,8 +1,8 @@
 .video-section{
     position: relative;
-    padding: 120px 0;
+    padding: 100px 0;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .video-bg{
@@ -15,6 +15,24 @@
     opacity: .9;
     z-index: -1;
 }
+
+.video-section .section-title h2{
+    font-size: 45px;
+    font-weight: 800;
+    color: #006FA3;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.video-section .section-title span{
+     display: block;
+    width: 150px;
+    height: 5px;
+    background: #0093DA;
+    border-radius: 50px;
+    margin: 18px auto 25px;
+}
+
 
 .section-tag{
     display: inline-block;
