@@ -1,71 +1,41 @@
-<section class="gallery-section" id="gallery">
-  <div class="gallery-bg"></div>
+<section class="gallery-section">
   <div class="container">
     <div class="section-title">
-      <h2>Gallery</h2>
-      <span></span>
+      <span class="gallery-tag">Gallery</span>
+
+      <h2>Recent Photos</h2>
     </div>
 
-    <div class="gallery-grid">
-      <div class="gallery-item big">
-        <img src="assets/images/gallery1.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Parliament Session</h3>
-          <span>Leadership</span>
+    <div class="gallery-slider">
+      <button class="gallery-btn prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
+
+      <div class="gallery-track">
+        <div class="gallery-card">
+          <img src="assets/images/gallery1.webp" />
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/images/gallery2.webp" />
+        </div>
+
+        <div class="gallery-card active">
+          <img src="assets/images/gallery3.webp" />
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/images/gallery4.jpg" />
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/images/news1.webp" />
         </div>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/images/news3.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Public Meeting</h3>
-          <span>Community</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="assets/images/news1.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Speech Program</h3>
-          <span>Campaign</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="assets/images/news2.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Media Interaction</h3>
-          <span>Interview</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="assets/images/gallery4.jpg" alt="" />
-        <div class="gallery-overlay">
-          <h3>Community Visit</h3>
-          <span>People</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="assets/images/gallery3.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Youth Program</h3>
-          <span>Education</span>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="assets/images/gallery2.webp" alt="" />
-        <div class="gallery-overlay">
-          <h3>Party Event</h3>
-          <span>RSP</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="gallery-button">
-      <a href="#">Explore Full Gallery →</a>
+      <button class="gallery-btn next">
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
     </div>
   </div>
 </section>
