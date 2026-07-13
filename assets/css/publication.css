@@ -1,0 +1,240 @@
+.publication-section{
+
+    padding:120px 0;
+    background:#fff;
+    margin-top: 20px;
+
+}
+
+.page-banner {
+    position: relative;
+    height: 420px;
+    background: #0093da;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 35, 70, 0.5);
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .breadcrumb span {
+    color: #fff;
+  }
+
+.publication-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:55px;
+    gap:40px;
+
+}
+
+.publication-title h2{
+
+    font-size:45px;
+    color:#006FA3;
+    margin:12px 0;
+    font-weight:800;
+
+}
+
+.publication-title p{
+
+    color:#444;
+    font-size:18px;
+    line-height:1.8;
+    max-width:600px;
+
+}
+
+.section-tag{
+
+    color:#0093DA;
+    font-weight:700;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+}
+
+.publication-btn{
+
+    text-decoration:none;
+    color:#0093DA;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.5px;
+
+}
+
+.publication-btn:hover{
+
+    color:#006FA3;
+
+}
+
+.publication-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+
+}
+
+.publication-card{
+
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.publication-card img{
+
+    width:100%;
+    height:310px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+
+}
+
+.publication-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.publication-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================================
+   PUBLICATION PAGE - MOBILE (480px & BELOW)
+========================================== */
+
+@media (max-width:480px){
+
+    /* Banner */
+
+    .page-banner{
+        height:220px;
+        margin-top:65px;
+        padding:0 20px;
+    }
+
+    .banner-content h1{
+        font-size:34px;
+        margin-bottom:12px;
+    }
+
+    .breadcrumb{
+        flex-wrap:wrap;
+        gap:6px;
+        font-size:14px;
+    }
+
+    /* Section */
+
+    .publication-section{
+        padding:60px 0;
+        margin-top:0;
+    }
+
+    .publication-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+        margin-bottom:35px;
+        padding:0 16px;
+    }
+
+    .section-tag{
+        font-size:15px;
+    }
+
+    .publication-title h2{
+        font-size:30px;
+        margin:10px 0;
+    }
+
+    .publication-title p{
+        font-size:15px;
+        line-height:1.7;
+        max-width:100%;
+    }
+
+    /* Button */
+
+    .publication-btn{
+        font-size:13px;
+        padding:12px 18px;
+        border:2px solid #0093DA;
+        border-radius:30px;
+        display:inline-block;
+    }
+
+    /* Grid */
+
+    .publication-grid{
+        grid-template-columns:1fr;
+        gap:22px;
+        padding:0 16px;
+    }
+
+    .publication-card{
+        width:100%;
+        border-radius:18px;
+    }
+
+    .publication-card img{
+        width:100%;
+        height:240px;
+        object-fit:cover;
+    }
+
+    .publication-card:hover{
+        transform:none;
+    }
+
+    .publication-card:hover img{
+        transform:scale(1.05);
+    }
+
+}
