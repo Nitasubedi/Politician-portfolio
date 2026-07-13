@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Prakriti Dhakal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/aboutpage.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <section class="page-banner">
+    <div class="banner-overlay"></div>
+
+    <div class="container">
+      <div class="banner-content">
+        <h1>Gallery</h1>
+
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+
+          <span>/</span>
+
+          <span>Gallery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">Latest Media & Stories</h2>
+        <p class="video-sub-head ">
+          Explore visual updates, documentation, and storytelling captures from our <br />latest ventures and project
+          milestones.
+        </p>
+      </div>
+
+      <!-- Video Grid Layout -->
+      <div class="video-grid">
+
+        <!-- ================= Row 1 (Large - Small) ================= -->
+        <!-- Card 1: Large -->
+        <div class="video-card large" data-video="https://www.youtube.com/embed/I8t0VJjEffk?autoplay=1">
+          <img src="https://img.youtube.com/vi/I8t0VJjEffk/maxresdefault.jpg" alt="Beautiful Nepal Trails">
+          <div class="video-info-overlay">
+            <!-- <span class="video-tag">Documentary</span> -->
+            <h3 class="video-title">Journey Across Himalayan Trails</h3>
+          </div>
+          <div class="play-btn">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+
+        <!-- Card 2: Small -->
+        <div class="video-card small" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
+          <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Nature Landscapes">
+          <div class="video-info-overlay">
+            <!-- <span class="video-tag">Nature</span> -->
+            <h3 class="video-title">Unseen Natural Landscapes</h3>
+          </div>
+          <div class="play-btn">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+
+        <!-- ================= Row 2 (Small - Large) ================= -->
+        <!-- Card 3: Small -->
+        <div class="video-card small" data-video="https://www.youtube.com/embed/S_DFQz48-I0?autoplay=1">
+          <img src="https://img.youtube.com/vi/S_DFQz48-I0/hqdefault.jpg" alt="Local Heritage Preservation">
+          <div class="video-info-overlay">
+            <!-- <span class="video-tag">Culture</span> -->
+            <h3 class="video-title">Heritage Conservation Projects</h3>
+          </div>
+          <div class="play-btn">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+
+        <!-- Card 4: Large -->
+        <div class="video-card large" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Visual Storytelling Highlight">
+          <div class="video-info-overlay">
+            <!-- <span class="video-tag">Highlights</span> -->
+            <h3 class="video-title">Annual Milestones and Celebrating Communities</h3>
+          </div>
+          <div class="play-btn">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Video Popup Modal -->
+      <div class="video-popup" id="videoPopup">
+        <div class="popup-content">
+          <span class="close-popup">&times;</span>
+          <iframe id="youtubeVideo" src="" title="YouTube video player" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= Footer ================= -->
+
+  <div id="footer"></div>
+
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+<style>
+  /* Gallery */
+
+  .gallery-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px 0;
+  }
+
+  .page-banner {
+    position: relative;
+    height: 420px;
+    background: #0093da;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 35, 70, 0.5);
+  }
+  .video-sub-head{
+    font-size: 16px;
+    line-height: 1.625;
+    padding: 10px 0 20px;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .breadcrumb span {
+    color: #fff;
+  }
+
+  .gallery-filter {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 18px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 5px;
+    position: relative;
+    transition: 0.3s;
+    padding: 12px 38px;
+  }
+
+  .filter-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background: #0093DA;
+    transition: 0.3s;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    color: #0093DA;
+  }
+
+  .filter-btn.active::after {
+    width: 100%;
+  }
+
+  /* Gallery Base */
+  /* .gallery-section {
+    padding: 80px 0;
+  } */
+
+  /* Video Grid Design (Alternating Rows) */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .video-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 340px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #000;
+  }
+
+  /* Alternate Sizes for Grid */
+  .video-card.large {
+    grid-column: span 2;
+  }
+
+  .video-card.small {
+    grid-column: span 1;
+  }
+
+  /* Card Hover states */
+  .video-card:hover {
+    /* transform: translateY(-8px); */
+    box-shadow: 0 20px 40px rgba(0, 147, 218, 0.2);
+  }
+
+  .video-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    opacity: 0.85;
+  }
+
+  .video-card:hover img {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+
+  /* Text Overlay details */
+  .video-info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    color: #ffffff;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .video-tag {
+    display: inline-block;
+    background: #0093da;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .video-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Play Button styling */
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 4;
+  }
+
+  .play-btn i {
+    font-size: 32px;
+    color: #0093DA;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .video-card:hover .play-btn {
+    background: #0093DA;
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: 0 10px 30px rgba(0, 147, 218, 0.4);
+  }
+
+  .video-card:hover .play-btn i {
+    color: #ffffff;
+  }
+
+  /* Dynamic Popup Frame */
+  .video-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 9999;
+  }
+
+  .video-popup.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .popup-content {
+    width: 90%;
+    max-width: 960px;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .video-popup.active .popup-content {
+    transform: scale(1);
+  }
+
+  .popup-content iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .close-popup {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: #94a3b8;
+    font-size: 36px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: color 0.2s ease;
+  }
+
+  .close-popup:hover {
+    color: #ffffff;
+  }
+
+  /* Responsive */
+
+  @media (max-width: 1024px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .video-card.large,
+    .video-card.small {
+      grid-column: span 1;
+      /* Fallback cleanly on medium displays */
+      height: 290px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 180px;
+
+    }
+
+    .large,
+    .wide,
+    .tall {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .video-card.large,
+    .video-card.small {
+      grid-column: span 1;
+      height: 240px;
+    }
+
+    .video-info-overlay {
+      padding: 20px;
+    }
+
+    .video-title {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<script>
+  const popup = document.getElementById("videoPopup");
+  const iframe = document.getElementById("youtubeVideo");
+  const closeBtn = document.querySelector(".close-popup");
+
+  // Click handler to launch popup modal
+  document.querySelectorAll(".video-card").forEach(card => {
+    card.addEventListener("click", () => {
+      iframe.src = card.dataset.video;
+      popup.classList.add("active");
+      document.body.style.overflow = "hidden"; // Prevent scrolling behind overlay
+    });
+  });
+
+  // Close on click close button
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("active");
+    iframe.src = "";
+    document.body.style.overflow = "";
+  });
+
+  // Close on click background
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("active");
+      iframe.src = "";
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Close on ESC key press
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && popup.classList.contains("active")) {
+      popup.classList.remove("active");
+      iframe.src = "";
+      document.body.style.overflow = "";
+    }
+  });
+</script>
+
+</html>
