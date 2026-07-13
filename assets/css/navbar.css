@@ -151,6 +151,8 @@
     transition:.35s ease;
 
     z-index:999;
+    border: none;
+    outline: none;
 
 }
 
@@ -161,6 +163,7 @@
     visibility:visible;
 
     transform:translateY(0);
+    outline: none;
 
 }
 
@@ -198,6 +201,10 @@
 
     padding-left:28px;
 
+}
+
+.dropdown-menu li a::after{
+    display: none !important;
 }
 
 @media (max-width:460px){
