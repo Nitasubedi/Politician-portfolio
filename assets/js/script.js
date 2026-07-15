@@ -34,6 +34,7 @@ if (dropdown) {
     }
   });
 }
+
 function initVideoSlider() {
   new Swiper(".videoSlider", {
     loop: true,
@@ -42,13 +43,9 @@ function initVideoSlider() {
 
     slidesPerView: 3,
 
-    spaceBetween: 25,
+    spaceBetween: 40,
 
     speed: 700,
-
-    grabCursor: true,
-
-    allowTouchMove: true,
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -58,15 +55,18 @@ function initVideoSlider() {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        centeredSlides: true,
         spaceBetween: 15,
       },
       768: {
         slidesPerView: 2,
+        centeredSlides: true,
         spaceBetween: 20,
       },
       1200: {
         slidesPerView: 3,
-        spaceBetween: 25,
+        centeredSlides: true,
+        spaceBetween: 40,
       },
     },
   });
